@@ -1,0 +1,530 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Bree sans-serif;
+}
+
+.flex{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+header{
+	color:white;
+	background: #4d4e54;
+	-webkit-box-flex: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
+
+}
+
+.header-logo{
+	padding: 2rem;
+}
+
+.header-logo img{
+	width:10rem;
+	margin: 0;
+}
+
+
+.header-logo p {
+	color:#9e9e9e;
+	margin: 0;
+	
+	font-size: .7rem;
+	font-weight: 200;
+}
+
+
+a{
+	color:white;
+	-webkit-text-decoration-line: none;
+	        text-decoration-line: none;
+}
+
+.header-navigator{
+	-webkit-box-flex: 2;
+
+	    -ms-flex-positive: 2;
+
+	        flex-grow: 2;
+
+	-ms-flex-item-align: end;
+
+	    align-self: flex-end;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+		
+	margin-bottom: 3rem;
+	margin-left: 7rem;
+	margin-right:3rem
+
+}
+
+.header-navigator a{
+	font-size: 1.2rem;
+	font-weight:400;
+}
+
+.header-navigator ul{
+	position: relative;
+	display: none;
+}
+
+.about-us{
+	background-image:url('../../image/BG.png');
+	
+	background-size: cover;
+
+
+	color:white;
+
+	-webkit-box-orient: vertical;
+
+	-webkit-box-direction: normal;
+
+	    -ms-flex-direction: column;
+
+	        flex-direction: column;
+
+	-webkit-box-align: center;
+
+	    -ms-flex-align: center;
+
+	        align-items: center;
+ 	-webkit-box-pack: center;
+ 	    -ms-flex-pack: center;
+ 	        justify-content: center;
+
+			padding:6rem 0px;
+
+}
+
+.about-us h1 {
+	font-size: 2.5rem;
+	-webkit-box-align: end;
+	    -ms-flex-align: end;
+	        align-items: end;
+	margin-bottom: 20px;
+}
+
+.about-us p {
+	font-size: 1.5rem;
+	margin: 1rem 5em;
+}
+
+.pursh{
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	background-color: #e7e7e7;
+	border-bottom: 10px solid #dadada;
+
+	-webkit-box-align: center;
+
+	    -ms-flex-align: center;
+
+	        align-items: center;
+ 	-webkit-box-pack: center;
+ 	    -ms-flex-pack: center;
+ 	        justify-content: center;
+}
+.pursh p{
+	font-size: 40px;
+	padding: 60px;
+	
+
+}
+
+.button {
+	margin: 20px 70px;
+
+    background-color: #1f232c;
+    border-radius: 5px;
+    color: #e6e6e6;
+	
+    padding: 30px 80px;
+
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
+
+    margin-left: 0;
+}
+
+
+
+.services{
+	-ms-flex-item-align:center;
+	    -ms-grid-row-align:center;
+	    align-self:center;	
+	-ms-flex-wrap: wrap;	
+	    flex-wrap: wrap;
+	padding: 5rem 2.5rem;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-around;
+	padding-bottom: 1rem;
+
+}
+
+.service-item{
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-item-align:center;
+	    -ms-grid-row-align:center;
+	    align-self:center;
+	margin:1rem 1rem;
+}
+
+
+
+.service-item:nth-child(1)  .service-image{
+	background:url('../../image/vf0vlmixkd.ent-logo.png') center no-repeat;
+	background-size: cover;
+}
+.service-item:nth-child(2)  .service-image{
+	background:url('../../image/Maison_carole-1.png') center no-repeat;
+	background-size: contain;
+}
+.service-item:nth-child(3)  .service-image{
+	background:url('../../image/insta.png') center no-repeat;
+	background-size: cover;
+}
+
+.service-image{
+	width: 8rem;
+	height: 8rem;
+}
+
+.service-text{
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	    -ms-flex-direction:column;
+	        flex-direction:column;
+	width: 18rem;
+	margin-left: 20px;
+}
+
+.service-text h1{
+	border-bottom: 2px solid black;
+	margin-bottom: 10px;
+	font-size: 1rem;
+	width:10rem;
+}
+.service-text p{
+	color:grey;
+	font-size: 1rem;
+	width:10rem;
+}
+.service-text a{
+	color:grey;
+}
+
+
+.works-border{
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-flex: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
+}
+.works-border p{
+
+	text-align: center;
+	font-size: 3rem;
+}
+
+.border-line{
+	
+	-webkit-box-flex: 3;
+	
+	    -ms-flex-positive: 3;
+	
+	        flex-grow: 3;
+
+	border-top: 3px solid black;
+
+	margin: 0px 20px;
+}
+
+.works{
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	margin: 50px;
+}
+
+.works-item{
+	margin: 20px;
+	min-width: 500px;
+
+}
+
+.works-image{
+	width: 500px;
+	height: 250px;
+}
+
+.works-item:nth-child(1) .works-image{
+	background-image:url('../../image/download-wallpaper-1920x1080-interior-design-style-home-house-living-room_full-house-designs-with-interior_interior-design_interior-design-books-jobs-institute-home-san-diego-magazine-houston.jpg');
+	background-size:cover;
+}
+.works-item:nth-child(2) .works-image{
+	background-image:url('../../image/interior-design-images-hd-skeletonize-on-or-furniture-wallpapers-hdq-19.jpg');
+	background-size:cover;
+}
+.works-item:nth-child(3) .works-image{
+	background-image:url('../../image/Jarkij-dizajn-oboev-dlja-detskoj-komnaty-s-jarkimi-krasnymi-akcentami.jpg');
+	background-size:cover;
+}
+.works-item:nth-child(4) .works-image{
+	background-image:url('../../image/Kak_podobrat_tsvet_dlya_interera_0069.jpg');
+	background-size:cover;
+}
+.works-item:nth-child(5) .works-image{
+	background-image:url('../../image/living-room-1920x1080-079.jpg');
+	background-size:cover;
+}
+.works-item:nth-child(6) .works-image{
+	background-image:url('../../image/living-room-modern-living-rooms-decor-in-green-and-black-color-in-living-room-furniture-sets-ideas-minimalist-living-room-furniture-sets.jpg');
+	background-size:cover;
+}
+
+
+
+
+
+.works-text{
+	background-color: #ededed;
+	text-align: center;
+	padding:2rem;
+}
+
+.works-text p {
+	font-size: 1rem;
+	color:grey;
+}
+
+footer{
+	background-color: #ededed;
+}
+
+.upper{
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	padding:2rem 5rem;
+}
+
+.title{
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	padding-right: 30px;
+	padding-bottom: 20px;
+	
+}
+.title h1{
+	font-size: 2rem;
+	color:#2c2c2c;
+}
+.title-text{
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	font-size: 1.5rem;
+	margin-bottom: 4rem;
+}
+.contacts{
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	    -ms-flex-direction:column;
+	        flex-direction:column;
+}
+.contacts p{
+	margin-bottom: 0px;
+}
+
+.contacts p{
+	color:#7c7c7c;
+}
+
+.links{
+	margin-left: 0rem;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	    -ms-flex-direction:column;
+	        flex-direction:column;
+}
+.links a{
+	color: #1f232c;
+	border-bottom: 1px solid #c4c4c4;
+}
+
+.contact-form{
+	margin-right:0rem;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	    -ms-flex-direction:column;
+	        flex-direction:column;
+}
+
+.contact-form .button{
+	border-radius: .7rem;
+	padding: 1rem 2rem;
+	font-size: 1rem;
+	font-weight:bold;
+	margin-right:4rem;
+}
+
+.lower{
+	background-color: #1f232c;
+	color:#737373;
+	padding: 30px;
+	text-align: center;
+}
+.lower p{
+	color:#737373;
+}
+
+input{
+	margin:20px 0px;
+	margin-right:0;
+	border-style: none;
+	width: 15rem;
+	font-size: 1.5rem;
+	padding:1rem;
+}
+
+#b-popup{
+	display: none;
+    width:100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow:hidden;
+    position:fixed;
+    top:0px;
+}
+#b-popup .b-popup-content{
+    margin:10rem auto 0px auto;
+    width:70%;
+    height: 10rem;
+    padding:10px;
+    background-color: #c5c5c5;
+    border-radius:5px 5px;
+    -webkit-box-shadow: 0px 0px 10px #000;
+    box-shadow: 0 0 10px #000 0 0 10px #000
+}
+
+@media only screen and (max-width: 770px) {
+    .header-navigator ul{
+		position: relative;
+		display: block;
+	}
+	li{
+		margin-bottom:10px;
+		margin-right:10rem;
+	}
+
+    .header-logo{
+    	padding: 3rem;
+    }
+	
+	.header-logo img{
+		width:15rem;
+		margin: 0;
+	}
+	
+	.header-logo p {
+    	font-size: 1rem;
+    }
+
+    .header-navigator > a{
+    	visibility: hidden;
+    }
+
+
+	.about-us{
+		
+	}
+    .about-us h1{
+		padding:3rem;
+		font-size: 2rem;
+
+    }
+    .about-us p{
+    	font-size: 1.5rem;
+    }
+
+    .pursh{
+    	-webkit-box-pack: center;
+    	    -ms-flex-pack: center;
+    	        justify-content: center;
+    	-webkit-box-align: center;
+    	    -ms-flex-align: center;
+    	        align-items: center;
+    	-ms-flex-item-align:center;
+    	    -ms-grid-row-align:center;
+    	    align-self:center;
+    	-webkit-box-orient: vertical;
+    	-webkit-box-direction: normal;
+    	    -ms-flex-direction: column;
+    	        flex-direction: column;
+		
+    }
+    .pursh p{
+    	text-align: center;
+    	padding-bottom: 0;
+    }
+
+    .pursh a{
+    	margin: 40px 0;
+    }
+
+	.service-item{
+		margin-left:7rem;
+	}
+	
+    .service-image{
+		width: 12rem;
+		height: 12rem;
+    }
+
+	.title h1{
+		font-size:1rem;
+	}
+	
+	.title-text p{
+		font-size:.7rem;
+	}
+	
+	.title-text a{
+		font-size:.7rem;
+	}
+	
+	input{
+		width:150px;
+	}
+	#send{
+		margin: 0px;
+		padding: 15px 40px;
+		font-size:1rem;
+	}
+	
+}
+
+/*
+< 600px
+tabletSmall	sm	small to medium tablet	600px > < 960px
+laptopMedium	md	large tablet to laptop	960px > < 1264*
+desktop_windowsLarge	lg	desktop	1264 > < 1904px*
+tvExtra large	xl	4k and ultra-wides	> 1904px*
+*/
